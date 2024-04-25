@@ -15,6 +15,7 @@ import videoIcon from "../assets/images/video-icon.png";
 import avatarIcon from "../assets/images/avatar-icon.png";
 import DoctorList from '../components/Doctors/DoctorList';
 import FaqList from '../components/Faq/FaqList';
+import Testimonial from '../components/Testimonial/Testimonial';
 
 
 
@@ -251,7 +252,22 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/*----faq section ends----*/}
+      {/*----testimonial section starts----*/}
+
+        <section>
+          <div className='container'>
+            <div className='xl:w-[470px] mx-auto'>
+              <h2 className='heading text-center'>
+                what our patient say
+              </h2>
+              <p className='text__para text-center'>
+                world-class care for everyone. Our health system offers unmatched,expert health care.
+              </p>
+            </div>
+            <Testimonial />
+          </div>
+        </section>
+      {/*----testimonial section ends----*/}
     </>
   );
 };
